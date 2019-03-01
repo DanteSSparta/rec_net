@@ -1,0 +1,21 @@
+.products-list
+  border: 1px #000 solid
+  display: flex
+  list-style: none
+  height: 110px
+  padding: 5px
+  margin: 15px
+  .item
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 5px
+    cursor: pointer
+    &:hover
+      @extend .zoom-background-hover
+
+
+
+.zoom-background-hover
+  transform: scale(1.05)
+  transition-duration: 0.5s
